@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bowlby+One+SC&family=Lobster&family=Marck+Script&family=Patrick+Hand&family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+
+// VARIABLES
+$primary-font: linear-gradient(90deg, rgba(180, 58, 58, 1) 0%, rgba(253, 100, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+$secondary-font: linear-gradient(90deg, rgba(27, 91, 163, 1) 0%, rgba(79, 172, 177, 1) 55%, rgba(26, 226, 146, 1) 95%);
+$third-font: yellowgreen;
+$forty-font: #edcb54;
+$font-size: 30px;
+$page: home;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'WindSong', cursive;
+}
+
+/* index */
+img {
+    width: 100%;
+}
+
+.bienvenido {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+
+
+    &__titulo {
+        letter-spacing: 2px;
+        margin-top: -0.8em;
+    } 
+       
+
+    &__parrafo {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 2vw;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 2px;
+        padding: 1em;
+        padding-left: 21%;
+        padding-right: 21%;
+        // width: 40rem;
+        // margin-left: 25%;
+        
+        // // transform: skew(-10deg, 0deg);
+    }
+
+    &__wpp {
+        width: 4rem;
+        height: 6rem;
+        padding-bottom: 2rem;
+
+        &:hover {
+            width: 5rem;
+            height: 7rem;
+            transition: 2s;
+        }
+    }
+
+}
+
+
+/* MODALIDADES */
+.containerMod {
+    height: 100%;
+    text-align: center;
+    background-color: black;
+
+    &__titulo {
+        background-image: url(../resources/multimedia/Clases+Guitarra-min.jpg);
+        height: 50vh;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__pageCards {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 8rem;
+        font-size: $font-size;
+      
+
+        &--titulo {
+            padding: 1rem;
+            font-size: $font-size * 2;
+            // -webkit-text-stroke: 2px black;
+            color: black;
+        }
+
+        &--parrafo {
+            font-size: $font-size / 2;
+        }
+
+        &--verMas {
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+// un poco de mi
+
+.tarjetaPresentacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+
+    &__imagen {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__texto {
+        margin: 1em;
+        padding: 2em;
+        background-color: #edcb54 !important;
+    }
+}
+
+//CONTACTO
+
+.pagContacto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #edcb54;
+
+    &__bloque1 {
+        margin-left: 3rem;
+        text-align: center;
+
+        &--form {
+            width: 28rem;
+
+            &--bordes {
+                border-radius: 20px;
+
+                &--formulario {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &--contenido {
+                        padding-bottom: 1rem;
+                        padding-left: 2rem;
+                    }
+
+                    &--boton {
+                        width: 10rem;
+                        margin-top: -2rem;
+                        margin-bottom: 1rem;
+                        border: #000 solid 1px;
+                        border-radius: 10px;
+                        font-weight: bold;
+                        font-family: 'Rock Salt', cursive;
+
+                        &:hover {
+                            background-color: greenyellow;
+                            border: none;
+                            padding-top: 0.2rem;
+                            width: 11rem;
+                            height: 3rem;
+                            box-shadow: 5px 6px 8px #000;
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bloque2 {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// servicios
+.img-servicios {
+    width: 100%;
+}
+
+.servicios-encabezado {
+    // background-image: url(../resources/multimedia/mic1-min.jpg);
+    // background-size: cover;
+    background-color: #edcb54;
+    height: 55vh;
+    box-shadow: 5px 8px 10px #000;
+    display: flex;
+    justify-content: space-evenly;
+    
+    &--microfono{
+        width: 18em;
+        height: 19em;
+        box-shadow: none;
+        padding-top: 1.5em;
+        padding-right: -10em;
+    }
+
+    h1 {
+        width: 50%;
+        text-align: center;
+        padding-top: 0.5em;
+        // padding-right: 1em;
+    }
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 2rem;
+    background-color: black;
+
+    &__subtituloYcards {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-bottom: 2em;
+
+        &--subtitulo {
+            padding: 1em;
+            text-align: center;
+            color: white;
+            border: #000;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+        &--cards {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 1.5em;
+            // box-shadow: 5px 10px 15px #000;
+        }
+    }
+
+}
+
+.card {
+    text-align: center;
+}
+
+.card-img-top {
+    padding: 0.5em;
+}
+
+
+// header
+
+@each $titulo in tituloHome, tituloUnpocodemi, tituloContacto, tituloModalidades, tituloServicios {
+    .#{$titulo} {
+        font-family: 'Lobster', cursive;
+
+        @if ($titulo==tituloHome) {
+            font-size: 12vw;
+            color: white;
+            text-shadow: 5px 6px 8px #000;
+        }
+
+        @else if $titulo==tituloModalidades {
+            font-size: 12rem;
+            color: $forty-font;
+            // -webkit-text-stroke: 2px black;
+            box-shadow: 5px 8px 10px #000;
+            padding-top: 10rem;
+            text-shadow: 5px 6px 8px #000;
+        }
+
+        @else if $titulo==tituloServicios {
+            font-size: 6rem;
+            color: black;
+            text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.589);
+        }
+
+        @else if $titulo==tituloUnpocodemi {
+            font-size: 4rem;
+            color: black;
+        }
+
+        @else {
+            font-size: 6rem;
+            padding-top: 0.5em;
+            color: black;
+        }
+    }
+}
+
+//interacion (en Unpocodemi)
+p {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@for $i from 1 through 4 {
+    .parrafo#{$i} {
+        font-size: $i * 10px;
+        color: $third-font * $i;
+        word-spacing: 5px * $i;
+    }
+}
+
+// mixin
+
+@mixin boxes ($width, $height, $font-size, $color, $background-color) {
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    color: $color;
+    background-color: $background-color;
+}
+
+.botonIndex {
+    @include boxes (10rem, 3rem, 1.5em, white, rgb(175, 41, 0))
+}
+
+.page-section__form__bordes__formulario__boton {
+    @include boxes (10rem, 3rem, 1.5em, black, aqua)
+}
+
+// footer 
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5em;
+
+    h3 {
+        color: black;
+    }
+
+    &__iconos {
+        color: black;
+        font-size: 2em;
+    }
+}
