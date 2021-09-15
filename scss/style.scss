@@ -77,7 +77,7 @@ img {
     background-color: black;
 
     &__titulo {
-        background-image: url(../resources/multimedia/Clases+Guitarra-min.jpg);
+        background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
         height: 50vh;
         background-size: contain;
         background-position: center;
@@ -199,8 +199,6 @@ img {
 }
 
 .servicios-encabezado {
-    // background-image: url(../resources/multimedia/mic1-min.jpg);
-    // background-size: cover;
     background-color: #edcb54;
     height: 55vh;
     box-shadow: 5px 8px 10px #000;
@@ -219,7 +217,6 @@ img {
         width: 50%;
         text-align: center;
         padding-top: 0.5em;
-        // padding-right: 1em;
     }
 }
 
@@ -250,7 +247,6 @@ img {
             display: flex;
             flex-wrap: wrap;
             margin-left: 1.5em;
-            // box-shadow: 5px 10px 15px #000;
         }
     }
 
@@ -280,7 +276,6 @@ img {
         @else if $titulo==tituloModalidades {
             font-size: 12rem;
             color: $forty-font;
-            // -webkit-text-stroke: 2px black;
             box-shadow: 5px 8px 10px #000;
             padding-top: 10rem;
             text-shadow: 5px 6px 8px #000;
