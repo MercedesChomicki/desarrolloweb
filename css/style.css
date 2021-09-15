@@ -47,7 +47,7 @@ img {
   text-align: center;
   background-color: black; }
   .containerMod__titulo {
-    background-image: url(../resources/multimedia/Clases+Guitarra-min.jpg);
+    background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
     height: 50vh;
     background-size: contain;
     background-position: center; }
