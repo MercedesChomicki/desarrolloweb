@@ -83,37 +83,28 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #edcb54; }
   .pagContacto__bloque1 {
     margin-left: 3rem;
     text-align: center; }
     .pagContacto__bloque1--form {
-      width: 28rem; }
-      .pagContacto__bloque1--form--bordes {
-        border-radius: 20px; }
-        .pagContacto__bloque1--form--bordes--formulario {
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-          .pagContacto__bloque1--form--bordes--formulario--contenido {
-            padding-bottom: 1rem;
-            padding-left: 2rem; }
-          .pagContacto__bloque1--form--bordes--formulario--boton {
-            width: 10rem;
-            margin-top: -2rem;
-            margin-bottom: 1rem;
-            border: #000 solid 1px;
-            border-radius: 10px;
-            font-weight: bold;
-            font-family: 'Rock Salt', cursive; }
-            .pagContacto__bloque1--form--bordes--formulario--boton:hover {
-              background-color: greenyellow;
-              border: none;
-              padding-top: 0.2rem;
-              width: 11rem;
-              height: 3rem;
-              box-shadow: 5px 6px 8px #000;
-              transition: 1s; }
+      width: 28rem;
+      background-color: #e9cb5d;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px #000; }
+      .pagContacto__bloque1--form--bordes--formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .pagContacto__bloque1--form--bordes--formulario--contenido {
+          padding-bottom: 1rem; }
+          .pagContacto__bloque1--form--bordes--formulario--contenido input {
+            border-radius: 50px;
+            border: black; }
+        .pagContacto__bloque1--form--bordes--formulario--boton {
+          margin-top: -2rem;
+          margin-bottom: 1rem; }
   .pagContacto__bloque2 {
     width: 50%; }
     .pagContacto__bloque2 img {
@@ -239,14 +230,32 @@ p {
   background-color: aqua; }
 
 .footer {
-  width: 100%;
-  height: 10vh;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 0.5em; }
-  .footer h3 {
+  padding-top: 2em; }
+  .footer-col ul li a {
     color: black; }
-  .footer__iconos {
-    color: black;
-    font-size: 2em; }
+
+/* media queries */
+@media screen and (max-width: 480px) {
+  .bienvenido__parrafo {
+    font-size: 3vw; }
+  .bienvenido__wpp {
+    width: 2rem;
+    height: 4rem; }
+    .bienvenido__wpp:hover {
+      width: 3rem;
+      height: 5rem; }
+  .footer h3 {
+    font-size: 1em; }
+  .footer p {
+    font-size: 0.8em; }
+  .footer-col {
+    padding: 1em; }
+    .footer-col .redes {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 1em; }
+    .footer-col ul {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.8em;
+      justify-content: center; } }
