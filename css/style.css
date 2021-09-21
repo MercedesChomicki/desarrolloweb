@@ -16,9 +16,8 @@ img {
 
 .bienvenido {
   width: 100%;
-  height: 100%;
   align-items: center;
-  background-color: black;
+  background-color: gainsboro;
   text-align: center; }
   .bienvenido__titulo {
     letter-spacing: 2px;
@@ -27,7 +26,7 @@ img {
     font-family: 'Shadows Into Light', cursive;
     font-size: 2vw;
     font-weight: 500;
-    color: white;
+    color: #000;
     letter-spacing: 2px;
     padding: 1em;
     padding-left: 21%;
@@ -41,35 +40,66 @@ img {
       height: 7rem;
       transition: 2s; }
 
-/* MODALIDADES */
-.containerMod {
-  height: 100%;
-  text-align: center;
-  background-color: black; }
-  .containerMod__titulo {
-    background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
-    height: 50vh;
-    background-size: contain;
-    background-position: center; }
-  .containerMod__pageCards {
+.servicios {
+  width: 100%; }
+  .servicios__encabezado {
+    background-image: url(../assets/multimedia/file.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
-    padding: 8rem;
+    align-content: center; }
+    .servicios__encabezado--texto {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: none;
+      box-shadow: none; }
+      .servicios__encabezado--texto h2 {
+        text-align: center;
+        color: white;
+        border: #000; }
+  .servicios__cards {
+    display: flex;
+    justify-content: space-around;
+    background-color: gainsboro;
+    padding: 2em;
+    flex-wrap: wrap; }
+    .servicios__cards--card {
+      margin: 2em;
+      text-align: center; }
+
+/* MODALIDADES */
+.containerMod {
+  text-align: center;
+  background-color: gainsboro; }
+  .containerMod__titulo {
+    background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center; }
+  .containerMod__pageCards {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-evenly;
     font-size: 30px; }
     .containerMod__pageCards--titulo {
       padding: 1rem;
-      font-size: 60px;
+      font-size: 45px;
       color: black; }
     .containerMod__pageCards--parrafo {
-      font-size: 15px; }
-    .containerMod__pageCards--verMas {
+      font-size: 20px; }
+    .containerMod__pageCards--inscribirme {
       text-transform: uppercase; }
 
 .tarjetaPresentacion {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: black; }
+  background-color: gainsboro; }
   .tarjetaPresentacion__imagen {
     width: 50%; }
     .tarjetaPresentacion__imagen img {
@@ -77,20 +107,19 @@ img {
   .tarjetaPresentacion__texto {
     margin: 1em;
     padding: 2em;
-    background-color: #edcb54 !important; }
+    background-color: white !important; }
 
 .pagContacto {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #edcb54; }
+  background-color: gainsboro; }
   .pagContacto__bloque1 {
     margin-left: 3rem;
     text-align: center; }
     .pagContacto__bloque1--form {
-      width: 28rem;
-      background-color: #e9cb5d;
+      background-color: gainsboro;
       border-radius: 20px;
       box-shadow: 2px 2px 8px #000; }
       .pagContacto__bloque1--form--bordes--formulario {
@@ -101,63 +130,23 @@ img {
           padding-bottom: 1rem; }
           .pagContacto__bloque1--form--bordes--formulario--contenido input {
             border-radius: 50px;
-            border: black; }
+            box-shadow: 2px 2px 8px #000; }
+          .pagContacto__bloque1--form--bordes--formulario--contenido textarea {
+            border-radius: 20px;
+            box-shadow: 2px 2px 8px #000; }
         .pagContacto__bloque1--form--bordes--formulario--boton {
+          font-family: Arial, Helvetica, sans-serif;
           margin-top: -2rem;
-          margin-bottom: 1rem; }
+          margin-bottom: 1rem;
+          border-radius: 10px;
+          box-shadow: 2px 4px 10px #000; }
+          .pagContacto__bloque1--form--bordes--formulario--boton :hover {
+            background: gainsboro;
+            border: solid 2px white; }
   .pagContacto__bloque2 {
     width: 50%; }
     .pagContacto__bloque2 img {
       width: 100%; }
-
-.img-servicios {
-  width: 100%; }
-
-.servicios-encabezado {
-  background-color: #edcb54;
-  height: 55vh;
-  box-shadow: 5px 8px 10px #000;
-  display: flex;
-  justify-content: space-evenly; }
-  .servicios-encabezado--microfono {
-    width: 18em;
-    height: 19em;
-    box-shadow: none;
-    padding-top: 1.5em;
-    padding-right: -10em; }
-  .servicios-encabezado h1 {
-    width: 50%;
-    text-align: center;
-    padding-top: 0.5em; }
-
-.servicios {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding-top: 2rem;
-  background-color: black; }
-  .servicios__subtituloYcards {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin-bottom: 2em; }
-    .servicios__subtituloYcards--subtitulo {
-      padding: 1em;
-      text-align: center;
-      color: white;
-      border: #000;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
-    .servicios__subtituloYcards--cards {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 1.5em; }
-
-.card {
-  text-align: center; }
-
-.card-img-top {
-  padding: 0.5em; }
 
 .tituloHome {
   font-family: 'Lobster', cursive;
@@ -174,21 +163,22 @@ img {
   font-family: 'Lobster', cursive;
   font-size: 6rem;
   padding-top: 0.5em;
+  padding-left: 0.5em;
   color: black; }
 
 .tituloModalidades {
   font-family: 'Lobster', cursive;
-  font-size: 12rem;
-  color: #edcb54;
-  box-shadow: 5px 8px 10px #000;
-  padding-top: 10rem;
-  text-shadow: 5px 6px 8px #000; }
+  font-size: 11rem;
+  color: white;
+  padding-top: 19rem;
+  text-shadow: 10px 10px 15px #000; }
 
 .tituloServicios {
   font-family: 'Lobster', cursive;
-  font-size: 6rem;
-  color: black;
-  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.589); }
+  font-size: 12rem;
+  color: white;
+  padding-top: 3rem;
+  text-shadow: 10px 10px 15px #000; }
 
 p {
   padding-top: 1rem;

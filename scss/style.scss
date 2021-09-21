@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bowlby+One+SC&family=Lobster&family=Marck+Script&family=Patrick+Hand&family=Rock+Salt&family=Shadows+Into+Light&display=swap');
 
 // VARIABLES
-$primary-font: linear-gradient(90deg, rgba(180, 58, 58, 1) 0%, rgba(253, 100, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+$primary-background: gainsboro;
 $secondary-font: linear-gradient(90deg, rgba(27, 91, 163, 1) 0%, rgba(79, 172, 177, 1) 55%, rgba(26, 226, 146, 1) 95%);
 $third-font: yellowgreen;
 $forty-font: #edcb54;
@@ -28,9 +28,8 @@ img {
 
 .bienvenido {
     width: 100%;
-    height: 100%;
     align-items: center;
-    background-color: black;
+    background-color: $primary-background;
     text-align: center;
 
 
@@ -44,7 +43,7 @@ img {
         font-family: 'Shadows Into Light', cursive;
         font-size: 2vw;
         font-weight: 500;
-        color: white;
+        color: #000;
         letter-spacing: 2px;
         padding: 1em;
         padding-left: 21%;
@@ -64,38 +63,79 @@ img {
     }
 }
 
+// servicios
+
+.servicios{
+    width: 100%;
+    &__encabezado {
+        background-image: url(../assets/multimedia/file.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+
+        &--texto{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: none;
+            box-shadow: none;
+          
+            h2{
+                text-align: center;
+                color: white;
+                border: #000;
+            }
+        }
+    }
+    
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+        background-color: $primary-background;
+        padding: 2em;
+        flex-wrap: wrap;
+            &--card {
+                margin: 2em;
+                text-align: center;
+            }
+        }
+    }
+
 
 /* MODALIDADES */
 .containerMod {
-    height: 100%;
     text-align: center;
-    background-color: black;
+    background-color: $primary-background;
 
     &__titulo {
         background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
-        height: 50vh;
-        background-size: contain;
+        height: 80vh;
+        background-size: cover;
         background-position: center;
     }
 
     &__pageCards {
+        padding-top: 2em;
+        padding-bottom: 2em;
         display: flex;
         justify-content: space-evenly;
-        padding: 8rem;
         font-size: $font-size;
-      
 
         &--titulo {
             padding: 1rem;
-            font-size: $font-size * 2;
+            font-size: $font-size * 1.5;
             color: black;
         }
 
         &--parrafo {
-            font-size: $font-size / 2;
+            font-size: $font-size / 1.5;
         }
 
-        &--verMas {
+        &--inscribirme {
             text-transform: uppercase;
         }
     }
@@ -108,7 +148,7 @@ img {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: black;
+    background-color: $primary-background;
 
     &__imagen {
         width: 50%;
@@ -121,7 +161,7 @@ img {
     &__texto {
         margin: 1em;
         padding: 2em;
-        background-color: #edcb54 !important;
+        background-color: white !important;
     }
 }
 
@@ -132,15 +172,14 @@ img {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #edcb54;
+    background-color: $primary-background;
 
     &__bloque1 {
         margin-left: 3rem;
         text-align: center;
 
         &--form {
-            width: 28rem;
-            background-color: #e9cb5d;
+            background-color: $primary-background;
             border-radius: 20px;
             box-shadow: 2px 2px 8px #000;
 
@@ -156,13 +195,24 @@ img {
                        
                         input{
                             border-radius: 50px;
-                            border: black;
+                            box-shadow: 2px 2px 8px #000;
+                        }
+                        textarea{
+                            border-radius: 20px;
+                            box-shadow: 2px 2px 8px #000; 
                         }
                     }
 
                     &--boton {
+                        font-family: Arial, Helvetica, sans-serif;
                         margin-top: -2rem;
                         margin-bottom: 1rem;
+                        border-radius: 10px;
+                        box-shadow: 2px 4px 10px #000; 
+                        :hover{
+                            background:$primary-background;
+                            border: solid 2px white;
+                        }
                     }
                 }
             }
@@ -176,73 +226,6 @@ img {
             width: 100%;
         }
     }
-}
-
-// servicios
-.img-servicios {
-    width: 100%;
-}
-
-.servicios-encabezado {
-    background-color: #edcb54;
-    height: 55vh;
-    box-shadow: 5px 8px 10px #000;
-    display: flex;
-    justify-content: space-evenly;
-    
-    &--microfono{
-        width: 18em;
-        height: 19em;
-        box-shadow: none;
-        padding-top: 1.5em;
-        padding-right: -10em;
-    }
-
-    h1 {
-        width: 50%;
-        text-align: center;
-        padding-top: 0.5em;
-    }
-}
-
-.servicios {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding-top: 2rem;
-    background-color: black;
-
-    &__subtituloYcards {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        margin-bottom: 2em;
-
-        &--subtitulo {
-            padding: 1em;
-            text-align: center;
-            color: white;
-            border: #000;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-
-        }
-
-        &--cards {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: 1.5em;
-        }
-    }
-
-}
-
-.card {
-    text-align: center;
-}
-
-.card-img-top {
-    padding: 0.5em;
 }
 
 
@@ -259,17 +242,17 @@ img {
         }
 
         @else if $titulo==tituloModalidades {
-            font-size: 12rem;
-            color: $forty-font;
-            box-shadow: 5px 8px 10px #000;
-            padding-top: 10rem;
-            text-shadow: 5px 6px 8px #000;
+            font-size: 11rem;
+            color: white;
+            padding-top: 19rem;
+            text-shadow: 10px 10px 15px #000;
         }
 
         @else if $titulo==tituloServicios {
-            font-size: 6rem;
-            color: black;
-            text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.589);
+            font-size: 12rem;
+            color: white;
+            padding-top: 3rem;
+            text-shadow: 10px 10px 15px #000;
         }
 
         @else if $titulo==tituloUnpocodemi {
@@ -280,6 +263,7 @@ img {
         @else {
             font-size: 6rem;
             padding-top: 0.5em;
+            padding-left: 0.5em;
             color: black;
         }
     }
