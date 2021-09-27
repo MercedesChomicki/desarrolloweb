@@ -62,83 +62,88 @@
     </header>
 
     <section>
-      <div class="pagContacto">
-        <div class="pagContacto__bloque1">
-          <div>
-            <h1 class="tituloContacto">Contacto</h1>
-          </div>
-          <div class="pagContacto__bloque1 pagContacto__bloque1--form modal-dialog">
-            <div class="pagContacto__bloque1--form pagContacto__bloque1--form--bordes modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contactame para mas informacion</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form class="pagContacto__bloque1--form--bordes pagContacto__bloque1--form--bordes--formulario" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                  <div class="row align-items-stretch mb-5">
-                    <div class="col-md-12">
-                      <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group">
-                        <!-- Name input-->
-                        <input class="form-control" id="nombre" type="text" placeholder="Nombre *"
-                          data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+      <div class="container">
+        <div class="pagContacto">
+          <div class="pagContacto__bloque1">
+            <div>
+              <h1 class="tituloContacto">Contacto</h1>
+            </div>
+            <div class="pagContacto__bloque1 pagContacto__bloque1--form modal-dialog">
+              <div class="pagContacto__bloque1--form pagContacto__bloque1--form--bordes modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contactame para mas informacion</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="pagContacto__bloque1--form--bordes pagContacto__bloque1--form--bordes--formulario" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                      <div class="col-md-12">
+                        <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group">
+                          <!-- Name input-->
+                          <input class="form-control" id="nombre" type="text" placeholder="Nombre *"
+                            data-sb-validations="required" />
+                          <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+                        </div>
+                        <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group">
+                          <!-- Name input-->
+                          <input class="form-control" id="apellido" type="text" placeholder="Apellido *"
+                            data-sb-validations="required" />
+                          <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+                        </div>
+                        <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group">
+                          <!-- Email address input-->
+                          <input class="form-control" id="email" type="email" placeholder="Email *"
+                            data-sb-validations="required,email" />
+                          <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido.</div>
+                          <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
+                        </div>
+                        <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group mb-md-0">
+                          <!-- Phone number input-->
+                          <input class="form-control" id="celphone" type="tel" placeholder="Celular *"
+                            data-sb-validations="required" />
+                          <div class="invalid-feedback" data-sb-feedback="phone:required">El numero de celular es requerido.
+                          </div>
+                        </div>
                       </div>
-                      <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group">
-                        <!-- Name input-->
-                        <input class="form-control" id="apellido" type="text" placeholder="Apellido *"
-                          data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
-                      </div>
-                      <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group">
-                        <!-- Email address input-->
-                        <input class="form-control" id="email" type="email" placeholder="Email *"
-                          data-sb-validations="required,email" />
-                        <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido.</div>
-                        <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
-                      </div>
-                      <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group mb-md-0">
-                        <!-- Phone number input-->
-                        <input class="form-control" id="celphone" type="tel" placeholder="Celular *"
-                          data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="phone:required">El numero de celular es requerido.
+                      <div class="col-md-12">
+                        <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group form-group-textarea mb-md-0">
+                          <!-- Message input-->
+                          <textarea rows="4" class="form-control" id="message" placeholder="Mensaje *"
+                            data-sb-validations="required"></textarea>
+                          <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.</div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--contenido form-group form-group-textarea mb-md-0">
-                        <!-- Message input-->
-                        <textarea rows="4" class="form-control" id="message" placeholder="Mensaje *"
-                          data-sb-validations="required"></textarea>
-                        <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.</div>
+                    <!-- Submit success message-->
+                    <div class="d-none" id="submitSuccessMessage">
+                      <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Envío de formulario exitoso!</div>
+                        Para activar este formulario, regístrese en
+                        <br />
+                        <a
+                          href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                       </div>
                     </div>
-                  </div>
-                  <!-- Submit success message-->
-                  <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                      <div class="fw-bolder">Envío de formulario exitoso!</div>
-                      Para activar este formulario, regístrese en
-                      <br />
-                      <a
-                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    <!-- Submit error message-->
+                    <div class="d-none" id="submitErrorMessage">
+                      <div class="text-center text-danger mb-3">¡Error al enviar el mensaje!</div>
                     </div>
-                  </div>
-                  <!-- Submit error message-->
-                  <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">¡Error al enviar el mensaje!</div>
-                  </div>
-                  <!-- Submit Button-->
-                  <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--boton text-center">
-                    <button class="btn btn-light btn-lg fs-3" id="submitButton" type="submit">Enviar</button>
-                  </div>
-                </form>
+                    <!-- Submit Button-->
+                    <div class="pagContacto__bloque1--form--bordes--formulario pagContacto__bloque1--form--bordes--formulario--boton text-center">
+                      <a href="../views/404.html" class="btn">Enviar</a>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+          <div class="pagContacto__bloque2">
+            <img src="../assets/multimedia/ea-min.jpg" alt="Profesor tocando la guitarra">
+          </div>
         </div>
-        <div class="pagContacto__bloque2">
-          <img src="../assets/multimedia/ea-min.jpg" alt="Profesor tocando la guitarra">
-        </div>
+        <a href="https://api.whatsapp.com/send?phone=+542494517926" class="bienvenido__btnWpp animate__animated animate__backInDown" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
     </section>
 

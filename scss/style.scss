@@ -2,8 +2,8 @@
 
 // VARIABLES
 $primary-background: gainsboro;
-$secondary-font: linear-gradient(90deg, rgba(27, 91, 163, 1) 0%, rgba(79, 172, 177, 1) 55%, rgba(26, 226, 146, 1) 95%);
-$third-font: yellowgreen;
+$secondary-font: #434343;
+$third-font: #000;
 $forty-font: #edcb54;
 $font-size: 30px;
 $page: home;
@@ -13,7 +13,11 @@ $page: home;
     padding: 0;
     box-sizing: border-box;
 }
-
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
 .navbar-brand {
     color: #fff;
     text-decoration: none;
@@ -22,43 +26,52 @@ $page: home;
 }
 
 /* index */
-img {
-    width: 100%;
-}
 
-.bienvenido {
-    width: 100%;
-    align-items: center;
-    background-color: $primary-background;
-    text-align: center;
-
-
-    &__titulo {
-        letter-spacing: 2px;
-        margin-top: -0.8em;
-    } 
-       
-
-    &__parrafo {
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 2vw;
-        font-weight: 500;
-        color: #000;
-        letter-spacing: 2px;
-        padding: 1em;
-        padding-left: 21%;
-        padding-right: 21%;
+.container{
+    .imgIndex {
+        width: 100%;
+        padding-top: 3rem; 
     }
-
-    &__wpp {
-        width: 4rem;
-        height: 6rem;
-        padding-bottom: 2rem;
-
-        &:hover {
-            width: 5rem;
-            height: 7rem;
-            transition: 2s;
+    
+    .bienvenido {
+        width: 100%;
+        align-items: center;
+        background-color: $primary-background;
+        text-align: center;
+    
+    
+        &__titulo {
+            letter-spacing: 2px;
+            margin-top: -0.7em;
+        } 
+           
+    
+        &__parrafo {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 2vw;
+            font-weight: 500;
+            height: 100%;
+            color: $third-font;
+            letter-spacing: 2px;
+            padding: 0.5em 21% 3em 21%;
+        }
+    
+        &__btnWpp {
+            position: fixed;
+            width: 3rem;
+            height: 3rem;
+            bottom: 2rem;
+            right: 10rem;
+            background-color: #0df053;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 2rem;
+    
+            &:hover {
+                transform: scale(1.2,1.2);
+                transition: 1s;
+            }
         }
     }
 }
@@ -67,6 +80,7 @@ img {
 
 .servicios{
     width: 100%;
+    padding-top: 4rem;
     &__encabezado {
         background-image: url(../assets/multimedia/file.jpg);
         background-size: cover;
@@ -87,7 +101,7 @@ img {
             h2{
                 text-align: center;
                 color: white;
-                border: #000;
+                border: $third-font;
             }
         }
     }
@@ -98,9 +112,17 @@ img {
         background-color: $primary-background;
         padding: 2em;
         flex-wrap: wrap;
+            img{
+                box-shadow: 1px 1px 5px $secondary-font;
+            }
             &--card {
                 margin: 2em;
                 text-align: center;
+               
+                &:hover{
+                    transform: scale(1.1,1.1);
+                    border: solid 1px $third-font;
+                }
             }
         }
     }
@@ -109,34 +131,39 @@ img {
 /* MODALIDADES */
 .containerMod {
     text-align: center;
+    padding-top: 4rem;
     background-color: $primary-background;
-
     &__titulo {
         background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
-        height: 80vh;
         background-size: cover;
         background-position: center;
     }
 
     &__pageCards {
+        
         padding-top: 2em;
         padding-bottom: 2em;
         display: flex;
         justify-content: space-evenly;
         font-size: $font-size;
 
+        .imgMod{
+            padding: 5px;
+        }
         &--titulo {
-            padding: 1rem;
-            font-size: $font-size * 1.5;
-            color: black;
+            padding-top: 0em;
+            padding-bottom: 0em;
+            font-size: $font-size * 1.2;
+            color: $third-font;
         }
 
         &--parrafo {
-            font-size: $font-size / 1.5;
+            font-size: $font-size / 1.6;
         }
 
         &--inscribirme {
             text-transform: uppercase;
+            margin-bottom: 1em;
         }
     }
 }
@@ -149,18 +176,17 @@ img {
     width: 100%;
     justify-content: space-between;
     background-color: $primary-background;
+    padding-top: 4rem;
 
     &__imagen {
         width: 50%;
-
         img {
             width: 100%;
         }
     }
 
     &__texto {
-        margin: 1em;
-        padding: 2em;
+        margin: 2em;
         background-color: white !important;
     }
 }
@@ -171,17 +197,17 @@ img {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 2rem;
     background-color: $primary-background;
 
     &__bloque1 {
-        margin-left: 3rem;
         text-align: center;
 
         &--form {
             background-color: $primary-background;
             border-radius: 20px;
-            box-shadow: 2px 2px 8px #000;
+            box-shadow: 2px 2px 8px $third-font;
 
             &--bordes {
                 &--formulario {
@@ -195,23 +221,33 @@ img {
                        
                         input{
                             border-radius: 50px;
-                            box-shadow: 2px 2px 8px #000;
+                            box-shadow: 2px 2px 8px $third-font;
                         }
                         textarea{
                             border-radius: 20px;
-                            box-shadow: 2px 2px 8px #000; 
+                            box-shadow: 2px 2px 8px $third-font; 
                         }
                     }
 
                     &--boton {
-                        font-family: Arial, Helvetica, sans-serif;
-                        margin-top: -2rem;
-                        margin-bottom: 1rem;
-                        border-radius: 10px;
-                        box-shadow: 2px 4px 10px #000; 
+                        .btn{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            margin-top: -2rem;
+                            margin-bottom: 1rem;
+                            border-radius: 5px;
+                            border: 1pz solid white;
+                            text-shadow: 0px 1px 0px $third-font;
+                            padding: 1rem 3rem;
+                            background-color: $third-font;
+                            color: white;
+                        }
+                        
                         :hover{
-                            background:$primary-background;
-                            border: solid 2px white;
+                            background: white;
+                            color: $third-font;
+                            border: 1px solid $secondary-font;
                         }
                     }
                 }
@@ -238,33 +274,32 @@ img {
         @if ($titulo==tituloHome) {
             font-size: 12vw;
             color: white;
-            text-shadow: 5px 6px 8px #000;
+            text-shadow: 5px 6px 8px $third-font;
         }
 
         @else if $titulo==tituloModalidades {
-            font-size: 11rem;
+            font-size: 14vw;
             color: white;
             padding-top: 19rem;
-            text-shadow: 10px 10px 15px #000;
+            text-shadow: 10px 10px 15px $third-font;
         }
 
         @else if $titulo==tituloServicios {
-            font-size: 12rem;
+            font-size: 15vw;
             color: white;
             padding-top: 3rem;
-            text-shadow: 10px 10px 15px #000;
+            text-shadow: 10px 10px 15px $third-font;
         }
 
         @else if $titulo==tituloUnpocodemi {
             font-size: 4rem;
-            color: black;
+            color: $third-font;
         }
 
         @else {
             font-size: 6rem;
             padding-top: 0.5em;
-            padding-left: 0.5em;
-            color: black;
+            color: $third-font;
         }
     }
 }
@@ -299,7 +334,7 @@ p {
 }
 
 .page-section__form__bordes__formulario__boton {
-    @include boxes (10rem, 3rem, 1.5em, black, aqua)
+    @include boxes (10rem, 3rem, 1.5em, $third-font, aqua)
 }
 
 // footer 
@@ -308,7 +343,7 @@ p {
     padding-top: 2em;
 
     &-col ul li a{
-        color: black;
+        color: $third-font;
     }
 }
 
@@ -319,19 +354,133 @@ p {
 .bienvenido {
 
     &__parrafo {
-        font-size: 3vw;
+        font-size: 10vw;
     }
-
-    &__wpp {
+    &__btnWpp {
+        position: fixed;
         width: 2rem;
-        height: 4rem;
+        height: 2rem;
+        margin-bottom: 15rem;
+        margin-right: -8rem;
+       
+    }
+}
 
-        &:hover {
-            width: 3rem;
-            height: 5rem;
+.servicios{
+
+    &__encabezado {
+
+        &--texto{
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            h1{
+                font-size: 13vh;
+            }
+            h2{
+                grid-row: 7 / 8;
+                width: 90%;
+                padding-left: 2em;
+            }
         }
     }
 }
+.containerMod {
+
+    &__titulo {
+        background-size: contain;
+  
+    }
+
+    &__pageCards {
+        display: grid;
+        padding-left: 0.5em;
+    }
+}
+
+.tarjetaPresentacion {
+    display: flex;
+    flex-direction: column;
+
+    &__imagen {
+        width: 100%;
+    }
+
+    &__texto {
+        width: 90vw !important;
+        padding-left: -2rem;
+        margin: 0.4rem;
+    }
+}
+.pagContacto {
+   
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+    background-color: $primary-background;
+
+    &__bloque1 {
+        text-align: center;
+
+        &--form {
+            background-color: $primary-background;
+            border-radius: 20px;
+            box-shadow: 2px 2px 8px $third-font;
+
+            &--bordes {
+                &--formulario {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                 
+
+                    &--contenido {
+                        padding-bottom: 1rem;
+                       
+                        input{
+                            border-radius: 50px;
+                            box-shadow: 2px 2px 8px $third-font;
+                        }
+                        textarea{
+                            border-radius: 20px;
+                            box-shadow: 2px 2px 8px $third-font; 
+                        }
+                    }
+
+                    &--boton {
+                        .btn{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            margin-top: -2rem;
+                            margin-bottom: 1rem;
+                            border-radius: 5px;
+                            border: 1pz solid white;
+                            text-shadow: 0px 1px 0px $third-font;
+                            padding: 1rem 3rem;
+                            background-color: $third-font;
+                            color: white;
+                        }
+                        
+                        :hover{
+                            background: white;
+                            color: $third-font;
+                            border: 1px solid $secondary-font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bloque2 {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .footer{
 
     h3{
