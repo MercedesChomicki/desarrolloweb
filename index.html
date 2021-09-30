@@ -16,135 +16,156 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=WindSong&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
 <body>
-    <div>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse justify-content-start">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="./views/modalidades.html"> Modalidades</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="navbar-brand fs-2" href="./index.html">Esteban Arevalo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link dropdown" href="./views/unpocodemi.html" tabindex="-1"
-                                    aria-disabled="true">Un poco de
-                                    mi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown" href="./views/contacto.html" tabindex="-1"
-                                    aria-disabled="true">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./views/modalidades.html"> Modalidades</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <section>
-            <div class="container">
-                <div>
-                    <img class="imgIndex" src="./assets/multimedia/foto1.jpg" alt="Profesor de canto">
-                </div>
-                <div class="bienvenido">
-                    <h1 class="bienvenido__titulo tituloHome animate__animated animate__bounce">Escuela de Canto</h1>
-                    <p class="bienvenido__parrafo"> Mi nombre es Esteban Arévalo, soy Vocal Coach y Profesor de
-                        Guitarra. Para recibir informacion sobre las Clases de Canto y / o Guitarra Presenciales u
-                        Online, no dudes en consultarme.
-                    </p>
-                    <a href="https://api.whatsapp.com/send?phone=+542494517926" class="bienvenido__btnWpp animate__animated animate__backInDown" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+                <a class="navbar-brand fs-2" href="../index.html">Esteban Arevalo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="./views/unpocodemi.html" tabindex="-1"
+                                aria-disabled="true">Un poco de
+                                mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="./views/contacto.html" tabindex="-1"
+                                aria-disabled="true">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <footer class="text-center footer-style">
-            <div class="container">
-                <div class="row footer">
-                    <div class="col-md-3 footer-col">
-                        <h3>Ubicacion</h3>
-                        <p>
-                            Tandil - Argentina
-                        </p>
-                    </div>
-                    <div class="col-md-3 footer-col">
-                        <h3>Mis redes</h3>
-                        <ul class="list-inline redes">
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/estevan.arevalo.14"
-                                    class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.instagram.com/eaescueladecanto/?hl=es"
-                                    class="btn-social btn-outline"><i id="instagram" class="fab fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" class="btn-social btn-outline"><i
-                                        class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" class="btn-social btn-outline"> <i id="youtube"
-                                        class="fab fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 footer-col">
-                        <h3>Links</h3>
-                        <ul class="list-inline">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="./views/modalidades.html"> Modalidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown" href="./views/unpocodemi.html" tabindex="-1"
-                                    aria-disabled="true">Un poco de
-                                    mi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown" href="./views/contacto.html" tabindex="-1"
-                                    aria-disabled="true">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 footer-col">
-                        <h3>Trabajo de forma presencial u online</h3>
-                        <p>Tengo más de 25 años de experiencia en el mundo de la musica y 10 años como profesor</p>
-                    </div>
+        </nav>
+    </header>
+
+    <!-- <section>
+        <div>
+            <div>
+                <img class="imgIndex" src="./assets/multimedia/foto1.jpg" alt="Profesor de canto">
+            </div>
+            <div class="bienvenido">
+                <h1 class="bienvenido__titulo tituloHome animate__animated animate__fadeInRightBig">Escuela de Canto</h1>
+                <p class="bienvenido__parrafo animate__animated animate__fadeInLeftBig"> Mi nombre es Esteban Arévalo, soy Vocal Coach y Profesor de
+                    Guitarra. Para recibir informacion sobre las Clases de Canto y / o Guitarra Presenciales u
+                    Online, no dudes en consultarme.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=+542494517926"
+                    class="bienvenido__btnWpp animate__animated animate__backInDown" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section> -->
+    <section>
+        <div class="imagenFondo">
+            <div class="imagenFondo__1">
+                <h1 class="tituloHome animate__animated animate__backInLeft">Clases de canto</h1>
+                <a href="https://api.whatsapp.com/send?phone=+542494517926" class="btn btn-primary btn-lg"
+                    target="_blank">¡Inscribirme!</a>
+            </div>
+            <div class="imagenFondo__2">
+                <a href="https://api.whatsapp.com/send?phone=+542494517926" class="imagenFondo__2--btnWpp"
+                    target="_blank">
+                    <i class="fab fa-whatsapp icono"></i>
+                </a>
+            </div>
+        </div>
+        <div class="parte2">
+            <p class="parte2__texto animate__animated animate__pulse">
+                Mi nombre es Esteban Arévalo, soy profesor de canto y
+                guitarra.
+                Actualmente estoy dando clases de forma presencial y online.
+                Para más informacion, haz <a href="https://api.whatsapp.com/send?phone=+542494517926" target="_blank"><button type="button" class="btn btn-primary">click aqui</button></a> !
+            </p>
+            <img class="parte2__foto1" src="./assets/multimedia/foto1.jpg" alt="">
+        </div>
+    </section>
+    <footer class="text-center footer-style">
+        <div>
+            <div class="row footer">
+                <div class="col-md-3 footer-col">
+                    <h3>Mis redes</h3>
+                    <ul class="list-inline redes">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/estevan.arevalo.14"
+                                class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/eaescueladecanto/?hl=es"
+                                class="btn-social btn-outline"><i id="instagram" class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn-social btn-outline"> <i id="youtube"
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-col">
+                    <h3>Links</h3>
+                    <ul class="list-inline">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./views/modalidades.html"> Modalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="./views/unpocodemi.html" tabindex="-1"
+                                aria-disabled="true">Un poco de
+                                mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="./views/contacto.html" tabindex="-1"
+                                aria-disabled="true">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-col">
+                    <h3>Ubicacion</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50767.58002899925!2d-59.17772167043251!3d-37.319449430466804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f9b2733946f%3A0xceef2c76899c202d!2sTandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1632887384216!5m2!1ses-419!2sar"
+                        width="300" height="200" style="border-radius: 10px;" allowfullscreen=""
+                        loading="lazy"></iframe>
                 </div>
             </div>
-            <script src="https://kit.fontawesome.com/f70a4d1ed3.js" crossorigin="anonymous"></script>
-        </footer>
-    </div>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+        </div>
+        <script src="https://kit.fontawesome.com/f70a4d1ed3.js" crossorigin="anonymous"></script>
+    </footer>
+
+    <script src="js/wow.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bowlby+One+SC&family=Lobster&family=Marck+Script&family=Patrick+Hand&family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 // VARIABLES
 $primary-background: gainsboro;
@@ -13,11 +14,13 @@ $page: home;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     z-index: 2;
 }
+
 .navbar-brand {
     color: #fff;
     text-decoration: none;
@@ -27,60 +30,137 @@ header{
 
 /* index */
 
-.container{
-    .imgIndex {
-        width: 100%;
-        padding-top: 3rem; 
-    }
-    
-    .bienvenido {
-        width: 100%;
-        align-items: center;
-        background-color: $primary-background;
-        text-align: center;
-    
-    
-        &__titulo {
-            letter-spacing: 2px;
-            margin-top: -0.7em;
-        } 
-           
-    
-        &__parrafo {
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 2vw;
-            font-weight: 500;
-            height: 100%;
-            color: $third-font;
-            letter-spacing: 2px;
-            padding: 0.5em 21% 3em 21%;
+// .imgIndex {
+//     padding-top: 3rem;
+//     width: 100%;
+// }
+
+// .bienvenido {
+//     width: 100%;
+//     align-items: center;
+//     background-color: $primary-background;
+//     text-align: center;
+
+
+//     &__titulo {
+//         letter-spacing: 2px;
+//         margin-top: -0.7em;
+//     }
+
+
+//     &__parrafo {
+//         font-family: 'Shadows Into Light', cursive;
+//         font-size: 2vw;
+//         font-weight: 500;
+//         height: 100%;
+//         color: $third-font;
+//         letter-spacing: 2px;
+//         padding: 0.5em 21% 3em 21%;
+//     }
+
+//     &__btnWpp {
+//         position: fixed;
+//         width: 3rem;
+//         height: 3rem;
+//         bottom: 2rem;
+//         right: 10rem;
+//         background-color: #0df053;
+//         color: white;
+//         border-radius: 50px;
+//         text-align: center;
+//         font-size: 2rem;
+
+//         &:hover {
+//             transform: scale(1.2, 1.2);
+//             transition: 1s;
+//         }
+//     }
+// }
+
+.imagenFondo {
+    padding-top: 5em;
+    background-image: url(../assets/multimedia/fotomic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 50em;
+    &__1{
+        margin-left: 12rem;
+        line-height : 8rem;
+        .btn{
+            margin-left: 10rem;
         }
-    
-        &__btnWpp {
+    }
+    &__2{
+        &--btnWpp {
             position: fixed;
             width: 3rem;
             height: 3rem;
-            bottom: 2rem;
-            right: 10rem;
+            bottom: 3rem;
+            right: 8rem;
             background-color: #0df053;
-            color: white;
+            color: #fff;
             border-radius: 50px;
             text-align: center;
             font-size: 2rem;
-    
-            &:hover {
-                transform: scale(1.2,1.2);
-                transition: 1s;
-            }
+            z-index: 100;
+            text-shadow: 2px 2px 8px $third-font;
+            box-shadow: 2px 2px 8px $third-font;
+        }
+        &:hover {
+            transform: scale(1.1, 1.1);
+            transition: 1s;
         }
     }
 }
 
+.parte2{
+    background-image: url(../assets/multimedia/grabaciones-min.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    // background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+    
+    height: 80vh;
+    align-items: center;
+    &__foto1{
+        width: 33rem;
+        border-radius: 10px;
+        box-shadow: #000 10px 5px 15px;
+    }
+    &__texto{
+        width: 22rem;
+        height: auto;
+        padding: 2rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        text-align:center;
+        background-color: rgba(172, 172, 172, 0.527);
+        // color:#77838f;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        // font-weight:100;
+        font-size:1.5em;
+        box-shadow: 2px 2px 8px $third-font;
+    }
+}
+
+.microfono{
+    height: 35rem;
+    padding-top: 6em;
+}
+
 // servicios
 
-.servicios{
+.servicios {
     width: 100%;
     padding-top: 4rem;
+
     &__encabezado {
         background-image: url(../assets/multimedia/file.jpg);
         background-size: cover;
@@ -91,74 +171,81 @@ header{
         justify-content: space-evenly;
         align-content: center;
 
-        &--texto{
+        &--texto {
             display: flex;
             flex-direction: column;
             text-align: center;
             background: none;
             box-shadow: none;
-          
-            h2{
+
+            h2 {
                 text-align: center;
                 color: white;
                 border: $third-font;
             }
         }
     }
-    
+
     &__cards {
         display: flex;
         justify-content: space-around;
         background-color: $primary-background;
         padding: 2em;
         flex-wrap: wrap;
-            img{
-                box-shadow: 1px 1px 5px $secondary-font;
-            }
-            &--card {
-                margin: 2em;
-                text-align: center;
-               
-                &:hover{
-                    transform: scale(1.1,1.1);
-                    border: solid 1px $third-font;
-                }
+
+        img {
+            box-shadow: 1px 1px 5px $secondary-font;
+        }
+
+        &--card {
+            margin: 2em;
+            text-align: center;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                border: solid 1px $third-font;
             }
         }
     }
+}
 
 
 /* MODALIDADES */
 .containerMod {
     text-align: center;
     padding-top: 4rem;
-    background-color: $primary-background;
+
+
     &__titulo {
         background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
         background-size: cover;
         background-position: center;
+
     }
 
     &__pageCards {
-        
+        background-color: $primary-background;
         padding-top: 2em;
         padding-bottom: 2em;
         display: flex;
         justify-content: space-evenly;
         font-size: $font-size;
 
-        .imgMod{
+        .imgMod {
             padding: 5px;
         }
+
         &--titulo {
             padding-top: 0em;
             padding-bottom: 0em;
             font-size: $font-size * 1.2;
             color: $third-font;
+            background: none;
         }
 
         &--parrafo {
             font-size: $font-size / 1.6;
+            background: none;
         }
 
         &--inscribirme {
@@ -180,6 +267,7 @@ header{
 
     &__imagen {
         width: 50%;
+
         img {
             width: 100%;
         }
@@ -199,7 +287,6 @@ header{
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
-    background-color: $primary-background;
 
     &__bloque1 {
         text-align: center;
@@ -214,23 +301,24 @@ header{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                 
+
 
                     &--contenido {
                         padding-bottom: 1rem;
-                       
-                        input{
+
+                        input {
                             border-radius: 50px;
                             box-shadow: 2px 2px 8px $third-font;
                         }
-                        textarea{
+
+                        textarea {
                             border-radius: 20px;
-                            box-shadow: 2px 2px 8px $third-font; 
+                            box-shadow: 2px 2px 8px $third-font;
                         }
                     }
 
                     &--boton {
-                        .btn{
+                        .btn {
                             font-family: Arial, Helvetica, sans-serif;
                             font-size: 1rem;
                             text-transform: uppercase;
@@ -243,8 +331,8 @@ header{
                             background-color: $third-font;
                             color: white;
                         }
-                        
-                        :hover{
+
+                        :hover {
                             background: white;
                             color: $third-font;
                             border: 1px solid $secondary-font;
@@ -267,14 +355,22 @@ header{
 
 // header
 
-@each $titulo in tituloHome, tituloUnpocodemi, tituloContacto, tituloModalidades, tituloServicios {
+@each $titulo in tituloHome,
+tituloUnpocodemi,
+tituloContacto,
+tituloModalidades,
+tituloServicios {
     .#{$titulo} {
         font-family: 'Lobster', cursive;
 
         @if ($titulo==tituloHome) {
-            font-size: 12vw;
+            font-size: 10vw;
+            width: 30rem;
+            padding-top: 8rem;
+            text-align: center;
             color: white;
-            text-shadow: 5px 6px 8px $third-font;
+            line-height : 8rem;
+            text-shadow: 10px 10px 15px $third-font;
         }
 
         @else if $titulo==tituloModalidades {
@@ -339,169 +435,182 @@ p {
 
 // footer 
 
-.footer{
+.footer {
     padding-top: 2em;
+    display: flex;
+    justify-content: center;
 
-    &-col ul li a{
+    &-col ul li a {
         color: $third-font;
     }
 }
 
+
 /* media queries */
 
 @media screen and (max-width: 480px) {
-    
-.bienvenido {
 
-    &__parrafo {
-        font-size: 10vw;
-    }
-    &__btnWpp {
-        position: fixed;
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: 15rem;
-        margin-right: -8rem;
-       
-    }
-}
+    .bienvenido {
 
-.servicios{
+        &__parrafo {
+            font-size: 10vw;
+        }
 
-    &__encabezado {
+        &__btnWpp {
+            position: fixed;
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: 15rem;
+            margin-right: -8rem;
 
-        &--texto{
-            display: grid;
-            grid-template-rows: repeat(8, 1fr);
-            h1{
-                font-size: 13vh;
-            }
-            h2{
-                grid-row: 7 / 8;
-                width: 90%;
-                padding-left: 2em;
-            }
         }
     }
-}
-.containerMod {
 
-    &__titulo {
-        background-size: contain;
-  
-    }
+    .servicios {
 
-    &__pageCards {
-        display: grid;
-        padding-left: 0.5em;
-    }
-}
+        &__encabezado {
 
-.tarjetaPresentacion {
-    display: flex;
-    flex-direction: column;
+            &--texto {
+                display: grid;
+                grid-template-rows: repeat(8, 1fr);
 
-    &__imagen {
-        width: 100%;
-    }
+                h1 {
+                    font-size: 13vh;
+                }
 
-    &__texto {
-        width: 90vw !important;
-        padding-left: -2rem;
-        margin: 0.4rem;
-    }
-}
-.pagContacto {
-   
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 2rem;
-    background-color: $primary-background;
-
-    &__bloque1 {
-        text-align: center;
-
-        &--form {
-            background-color: $primary-background;
-            border-radius: 20px;
-            box-shadow: 2px 2px 8px $third-font;
-
-            &--bordes {
-                &--formulario {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                 
-
-                    &--contenido {
-                        padding-bottom: 1rem;
-                       
-                        input{
-                            border-radius: 50px;
-                            box-shadow: 2px 2px 8px $third-font;
-                        }
-                        textarea{
-                            border-radius: 20px;
-                            box-shadow: 2px 2px 8px $third-font; 
-                        }
-                    }
-
-                    &--boton {
-                        .btn{
-                            font-family: Arial, Helvetica, sans-serif;
-                            font-size: 1rem;
-                            text-transform: uppercase;
-                            margin-top: -2rem;
-                            margin-bottom: 1rem;
-                            border-radius: 5px;
-                            border: 1pz solid white;
-                            text-shadow: 0px 1px 0px $third-font;
-                            padding: 1rem 3rem;
-                            background-color: $third-font;
-                            color: white;
-                        }
-                        
-                        :hover{
-                            background: white;
-                            color: $third-font;
-                            border: 1px solid $secondary-font;
-                        }
-                    }
+                h2 {
+                    grid-row: 7 / 8;
+                    width: 90%;
+                    padding-left: 2em;
                 }
             }
         }
     }
 
-    &__bloque2 {
-        width: 100%;
+    .containerMod {
 
-        img {
+        &__titulo {
+            background-size: contain;
+
+        }
+
+        &__pageCards {
+            display: grid;
+            padding-left: 0.5em;
+        }
+    }
+
+    .tarjetaPresentacion {
+        display: flex;
+        flex-direction: column;
+
+        &__imagen {
             width: 100%;
         }
-    }
-}
 
-.footer{
-
-    h3{
-        font-size: 1em;
-    }
-    p{
-        font-size: 0.8em;
-    }
-    &-col{
-        padding: 1em;
-        .redes{
-            display: flex;
-            justify-content: space-evenly;
-            padding-top: 1em;
+        &__texto {
+            width: 90vw !important;
+            padding-left: -2rem;
+            margin: 0.4rem;
         }
-        ul{
-            display: flex;
-            flex-wrap: wrap;
+    }
+
+    .pagContacto {
+
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 2rem;
+        background-color: $primary-background;
+
+        &__bloque1 {
+            text-align: center;
+
+            &--form {
+                background-color: $primary-background;
+                border-radius: 20px;
+                box-shadow: 2px 2px 8px $third-font;
+
+                &--bordes {
+                    &--formulario {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+
+                        &--contenido {
+                            padding-bottom: 1rem;
+
+                            input {
+                                border-radius: 50px;
+                                box-shadow: 2px 2px 8px $third-font;
+                            }
+
+                            textarea {
+                                border-radius: 20px;
+                                box-shadow: 2px 2px 8px $third-font;
+                            }
+                        }
+
+                        &--boton {
+                            .btn {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 1rem;
+                                text-transform: uppercase;
+                                margin-top: -2rem;
+                                margin-bottom: 1rem;
+                                border-radius: 5px;
+                                border: 1pz solid white;
+                                text-shadow: 0px 1px 0px $third-font;
+                                padding: 1rem 3rem;
+                                background-color: $third-font;
+                                color: white;
+                            }
+
+                            :hover {
+                                background: white;
+                                color: $third-font;
+                                border: 1px solid $secondary-font;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bloque2 {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+
+        h3 {
+            font-size: 1em;
+        }
+
+        p {
             font-size: 0.8em;
-            justify-content: center;
+        }
+
+        &-col {
+            padding: 1em;
+
+            .redes {
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: 1em;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.8em;
+                justify-content: center;
+            }
         }
     }
 }
-  }
