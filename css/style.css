@@ -7,7 +7,7 @@
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100% !important;
   z-index: 2; }
 
 .navbar-brand {
@@ -23,7 +23,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 50em; }
   .imagenFondo__1 {
     margin-left: 12rem;
@@ -53,14 +53,14 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 50em;
   display: flex;
   justify-content: center;
   height: 80vh;
   align-items: center; }
   .parte2__foto1 {
-    width: 33rem;
+    width: 38.5%;
     border-radius: 10px;
     box-shadow: #000 10px 5px 15px; }
   .parte2__texto {
@@ -76,19 +76,17 @@ header {
     font-size: 1.5em;
     box-shadow: 2px 2px 8px #000; }
 
-.microfono {
-  height: 35rem;
-  padding-top: 6em; }
-
 .servicios {
   width: 100%;
   padding-top: 4rem; }
   .servicios__encabezado {
-    background-image: url(../assets/multimedia/file.jpg);
+    background-image: url(../assets/multimedia/servicios.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    position: relative;
-    height: 80vh;
+    width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-content: center; }
@@ -104,53 +102,70 @@ header {
         border: #000; }
   .servicios__cards {
     display: flex;
-    justify-content: space-around;
-    background-color: gainsboro;
-    padding: 2em;
+    justify-content: space-evenly;
+    background-image: url(../assets/multimedia/foto9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 4em;
+    padding-bottom: 3em;
     flex-wrap: wrap; }
     .servicios__cards img {
       box-shadow: 1px 1px 5px #434343; }
     .servicios__cards--card {
-      margin: 2em;
-      text-align: center; }
+      width: 18rem;
+      height: auto;
+      margin: 4em;
+      text-align: center;
+      background: none;
+      padding: 0.5em; }
       .servicios__cards--card:hover {
-        transform: scale(1.1, 1.1);
-        border: solid 1px #000; }
+        transform: scale(1.1, 1.1); }
+        .servicios__cards--card:hover img {
+          transform: rotateY(180deg); }
+      .servicios__cards--card--tarj {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.815); }
 
 /* MODALIDADES */
 .containerMod {
   text-align: center;
-  padding-top: 4rem; }
-  .containerMod__titulo {
-    background-image: url(../assets/multimedia/Clases+Guitarra-min.jpg);
-    background-size: cover;
-    background-position: center; }
-  .containerMod__pageCards {
-    background-color: gainsboro;
-    padding-top: 2em;
-    padding-bottom: 2em;
+  padding-top: 4rem;
+  background-image: url(../assets/multimedia/foto4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  width: 100%;
+  height: 200vh; }
+  .containerMod__pv {
+    padding-top: 1rem;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 30px; }
-    .containerMod__pageCards .imgMod {
-      padding: 5px; }
-    .containerMod__pageCards--titulo {
-      padding-top: 0em;
-      padding-bottom: 0em;
-      font-size: 36px;
-      color: #000;
-      background: none; }
-    .containerMod__pageCards--parrafo {
-      font-size: 18.75px;
-      background: none; }
-    .containerMod__pageCards--inscribirme {
-      text-transform: uppercase;
-      margin-bottom: 1em; }
+    justify-content: center; }
+    .containerMod__pv--card {
+      width: 25rem;
+      height: auto;
+      margin: 2em;
+      text-align: center;
+      background: none;
+      padding: 0.5em; }
+      .containerMod__pv--card:hover {
+        transform: scale(1.1, 1.1); }
+      .containerMod__pv--card--tarj {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.815); }
+        .containerMod__pv--card--tarj--titulo {
+          font-size: 200%; }
+        .containerMod__pv--card--tarj--texto {
+          font-size: 120%;
+          padding-bottom: 5%; }
 
 .tarjetaPresentacion {
   display: flex;
+  justify-content: center;
   width: 100%;
-  justify-content: space-between;
   background-color: gainsboro;
   padding-top: 4rem; }
   .tarjetaPresentacion__imagen {
@@ -158,15 +173,26 @@ header {
     .tarjetaPresentacion__imagen img {
       width: 100%; }
   .tarjetaPresentacion__texto {
-    margin: 2em;
-    background-color: white !important; }
+    width: 50%;
+    background-color: white !important;
+    padding: 3%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    text-align: justify;
+    line-height: 1.5rem; }
+    .tarjetaPresentacion__texto--p--lista {
+      display: flex;
+      justify-content: space-evenly; }
 
 .pagContacto {
+  padding-top: 2rem;
+  background-image: url(../assets/multimedia/show.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2rem; }
+  height: 150vh; }
   .pagContacto__bloque1 {
     text-align: center; }
     .pagContacto__bloque1--form {
@@ -184,33 +210,39 @@ header {
             box-shadow: 2px 2px 8px #000; }
           .pagContacto__bloque1--form--bordes--formulario--contenido textarea {
             border-radius: 20px;
-            box-shadow: 2px 2px 8px #000; }
-        .pagContacto__bloque1--form--bordes--formulario--boton .btn {
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 1rem;
-          text-transform: uppercase;
-          margin-top: -2rem;
-          margin-bottom: 1rem;
-          border-radius: 5px;
-          border: 1pz solid white;
-          text-shadow: 0px 1px 0px #000;
-          padding: 1rem 3rem;
-          background-color: #000;
-          color: white; }
-        .pagContacto__bloque1--form--bordes--formulario--boton :hover {
-          background: white;
-          color: #000;
-          border: 1px solid #434343; }
-  .pagContacto__bloque2 {
-    width: 50%; }
-    .pagContacto__bloque2 img {
-      width: 100%; }
+            box-shadow: 2px 2px 8px #000;
+            margin-bottom: -2em; }
+
+.boody {
+  font-family: sans-serif;
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .boody__container-404 {
+    text-align: center;
+    width: 100%;
+    max-width: 30rem;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    line-height: 1.7;
+    color: #434343; }
+    .boody__container-404--mic {
+      width: 20em; }
+    .boody__container-404--titulo {
+      font-family: 'Lobster', cursive;
+      font-size: 4em; }
 
 .tituloHome {
   font-family: 'Lobster', cursive;
   font-size: 10vw;
-  width: 30rem;
-  padding-top: 8rem;
+  width: 40%;
+  margin-top: 5rem;
   text-align: center;
   color: white;
   line-height: 8rem;
@@ -218,12 +250,14 @@ header {
 
 .tituloUnpocodemi {
   font-family: 'Lobster', cursive;
-  font-size: 4rem;
-  color: #000; }
+  font-size: 7vw;
+  color: #000;
+  line-height: 5rem;
+  text-align: center; }
 
 .tituloContacto {
   font-family: 'Lobster', cursive;
-  font-size: 6rem;
+  font-size: 8rem;
   padding-top: 0.5em;
   color: #000; }
 
@@ -231,7 +265,7 @@ header {
   font-family: 'Lobster', cursive;
   font-size: 14vw;
   color: white;
-  padding-top: 19rem;
+  padding-top: 4rem;
   text-shadow: 10px 10px 15px #000; }
 
 .tituloServicios {
@@ -281,36 +315,98 @@ p {
   background-color: aqua; }
 
 .footer {
+  width: 100%;
   padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  color: #434343; }
   .footer-col ul li a {
-    color: #000; }
+    color: #434343; }
+  .footer-col ul li .btn-social {
+    font-size: 2em; }
 
 /* media queries */
 @media screen and (max-width: 480px) {
-  .bienvenido__parrafo {
-    font-size: 10vw; }
-  .bienvenido__btnWpp {
-    position: fixed;
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 15rem;
-    margin-right: -8rem; }
-  .servicios__encabezado--texto {
-    display: grid;
-    grid-template-rows: repeat(8, 1fr); }
-    .servicios__encabezado--texto h1 {
-      font-size: 13vh; }
-    .servicios__encabezado--texto h2 {
-      grid-row: 7 / 8;
-      width: 90%;
-      padding-left: 2em; }
-  .containerMod__titulo {
-    background-size: contain; }
-  .containerMod__pageCards {
-    display: grid;
-    padding-left: 0.5em; }
+  .imagenFondo {
+    background-image: url(../assets/multimedia/fotomic2.jpg);
+    padding-top: 1.5em;
+    height: 40em; }
+    .imagenFondo__1 {
+      margin-left: -1rem; }
+      .imagenFondo__1 .btn {
+        margin-left: 7rem;
+        margin-top: 14em; }
+      .imagenFondo__1 .tituloHome {
+        font-size: 5em;
+        line-height: 4rem;
+        width: 100%; }
+    .imagenFondo__2--btnWpp {
+      margin-bottom: 5rem;
+      margin-right: -5rem; }
+  .parte2 {
+    background-color: #a5472a;
+    display: flex;
+    flex-direction: column-reverse; }
+    .parte2__foto1 {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: #000 10px 5px 15px; }
+    .parte2__texto {
+      width: 80%;
+      height: auto;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      background-color: rgba(172, 172, 172, 0.527);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      box-shadow: 2px 2px 8px #000; }
+  .servicios__encabezado--texto .tituloServicios {
+    margin-top: -6rem;
+    font-size: 5em; }
+  .servicios__encabezado--texto h2 {
+    margin-top: 10em; }
+  .servicios__cards {
+    display: flex;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 3em; }
+    .servicios__cards--card {
+      padding: 0.1em;
+      margin: 0.5em;
+      margin-top: 3em;
+      width: 20rem; }
+  .tituloModalidades {
+    font-size: 4em; }
+  .containerMod {
+    height: auto; }
+    .containerMod__pv {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 2em; }
+      .containerMod__pv--card {
+        width: 19rem;
+        height: auto;
+        margin: 2em;
+        text-align: center;
+        background: none;
+        padding: 0.5em; }
+        .containerMod__pv--card:hover {
+          transform: scale(1.1, 1.1); }
+        .containerMod__pv--card--tarj {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.815); }
+          .containerMod__pv--card--tarj--titulo {
+            font-size: 200%; }
+          .containerMod__pv--card--tarj--texto {
+            font-size: 120%;
+            padding-bottom: 5%; }
   .tarjetaPresentacion {
     display: flex;
     flex-direction: column; }
@@ -320,49 +416,8 @@ p {
       width: 90vw !important;
       padding-left: -2rem;
       margin: 0.4rem; }
-  .pagContacto {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 2rem;
-    background-color: gainsboro; }
-    .pagContacto__bloque1 {
-      text-align: center; }
-      .pagContacto__bloque1--form {
-        background-color: gainsboro;
-        border-radius: 20px;
-        box-shadow: 2px 2px 8px #000; }
-        .pagContacto__bloque1--form--bordes--formulario {
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-          .pagContacto__bloque1--form--bordes--formulario--contenido {
-            padding-bottom: 1rem; }
-            .pagContacto__bloque1--form--bordes--formulario--contenido input {
-              border-radius: 50px;
-              box-shadow: 2px 2px 8px #000; }
-            .pagContacto__bloque1--form--bordes--formulario--contenido textarea {
-              border-radius: 20px;
-              box-shadow: 2px 2px 8px #000; }
-          .pagContacto__bloque1--form--bordes--formulario--boton .btn {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1rem;
-            text-transform: uppercase;
-            margin-top: -2rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-            border: 1pz solid white;
-            text-shadow: 0px 1px 0px #000;
-            padding: 1rem 3rem;
-            background-color: #000;
-            color: white; }
-          .pagContacto__bloque1--form--bordes--formulario--boton :hover {
-            background: white;
-            color: #000;
-            border: 1px solid #434343; }
-    .pagContacto__bloque2 {
-      width: 100%; }
-      .pagContacto__bloque2 img {
-        width: 100%; }
+  .pagContacto__bloque1 .tituloContacto {
+    font-size: 5em; }
   .footer h3 {
     font-size: 1em; }
   .footer p {
