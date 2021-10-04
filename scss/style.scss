@@ -455,7 +455,6 @@ p {
     .imagenFondo {
         background-image: url(../assets/multimedia/fotomic2-min.jpg);
         padding-top: 1.5em;
-        height: 40em;
 
         &__1 {
             margin-left: -1rem;
@@ -597,20 +596,20 @@ p {
         }
 
         &__texto {
-            width: 90vw !important;
-            padding-left: -2rem;
-            margin: 0.4rem;
+            width: 100vw;
         }
     }
 
     // CONTACTO
 
     .pagContacto {
+        height: 130vh;
 
         &__bloque1 {
 
             .tituloContacto {
                 font-size: 5em;
+                padding-top: 1em;
             }
         }
     }

@@ -330,8 +330,7 @@ p {
 @media screen and (max-width: 480px) {
   .imagenFondo {
     background-image: url(../assets/multimedia/fotomic2-min.jpg);
-    padding-top: 1.5em;
-    height: 40em; }
+    padding-top: 1.5em; }
     .imagenFondo__1 {
       margin-left: -1rem; }
       .imagenFondo__1 .btn {
@@ -413,11 +412,12 @@ p {
     .tarjetaPresentacion__imagen {
       width: 100%; }
     .tarjetaPresentacion__texto {
-      width: 90vw !important;
-      padding-left: -2rem;
-      margin: 0.4rem; }
-  .pagContacto__bloque1 .tituloContacto {
-    font-size: 5em; }
+      width: 100vw; }
+  .pagContacto {
+    height: 130vh; }
+    .pagContacto__bloque1 .tituloContacto {
+      font-size: 5em;
+      padding-top: 1em; }
   .footer h3 {
     font-size: 1em; }
   .footer p {
