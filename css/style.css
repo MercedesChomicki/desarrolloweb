@@ -80,7 +80,7 @@ header {
   width: 100%;
   padding-top: 4rem; }
   .servicios__encabezado {
-    background-image: url(../assets/multimedia/servicios.jpg);
+    background-image: url(../assets/multimedia/servicios-min.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -103,7 +103,7 @@ header {
   .servicios__cards {
     display: flex;
     justify-content: space-evenly;
-    background-image: url(../assets/multimedia/foto9.jpg);
+    background-image: url(../assets/multimedia/foto9-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -133,7 +133,7 @@ header {
 .containerMod {
   text-align: center;
   padding-top: 4rem;
-  background-image: url(../assets/multimedia/foto4.jpg);
+  background-image: url(../assets/multimedia/foto4-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -329,7 +329,7 @@ p {
 /* media queries */
 @media screen and (max-width: 480px) {
   .imagenFondo {
-    background-image: url(../assets/multimedia/fotomic2.jpg);
+    background-image: url(../assets/multimedia/fotomic2-min.jpg);
     padding-top: 1.5em;
     height: 40em; }
     .imagenFondo__1 {
