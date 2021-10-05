@@ -41,10 +41,10 @@ header {
 
     &__1 {
         margin-left: 12rem;
-        line-height: 8rem;
+        line-height: 10rem;
 
         .btn {
-            margin-left: 10rem;
+            margin-left: 12rem;
         }
     }
 
@@ -99,7 +99,7 @@ header {
         text-align: center;
         background-color: rgba(172, 172, 172, 0.527);
         color: white;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'poppins', sans-serif;
         font-size: 1.5em;
         box-shadow: 2px 2px 8px $third-font;
     }
@@ -199,15 +199,11 @@ header {
         justify-content: center;
 
         &--card {
-            width: 25rem;
+            width: 20rem;
             height: auto;
-            margin: 2em;
-            text-align: center;
-            background: none;
-            padding: 0.5em;
 
             &:hover {
-                transform: scale(1.1, 1.1);
+                transform: scale(1.05, 1.05);
             }
 
             &--tarj {
@@ -460,8 +456,8 @@ p {
             margin-left: -1rem;
 
             .btn {
-                margin-left: 7rem;
-                margin-top: 14em;
+                margin-left: 8rem;
+                margin-top: 15em;
             }
 
             .tituloHome {
@@ -480,7 +476,7 @@ p {
     }
 
     .parte2 {
-        background-color: rgb(165, 71, 42);
+        background-image: url(../assets/multimedia/grabaciones-min2.jpg);
         display: flex;
         flex-direction: column-reverse;
 
@@ -549,16 +545,16 @@ p {
         height: auto;
 
         &__pv {
-            padding-top: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding-bottom: 2em;
+            padding-left: 1.2em;
+            padding-right: 1em;
 
             &--card {
-                width: 19rem;
+                width: 20rem;
                 height: auto;
-                margin: 2em;
                 text-align: center;
                 background: none;
                 padding: 0.5em;

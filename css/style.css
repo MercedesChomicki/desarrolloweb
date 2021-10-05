@@ -27,9 +27,9 @@ header {
   height: 50em; }
   .imagenFondo__1 {
     margin-left: 12rem;
-    line-height: 8rem; }
+    line-height: 10rem; }
     .imagenFondo__1 .btn {
-      margin-left: 10rem; }
+      margin-left: 12rem; }
   .imagenFondo__2--btnWpp {
     position: fixed;
     width: 3rem;
@@ -72,7 +72,7 @@ header {
     text-align: center;
     background-color: rgba(172, 172, 172, 0.527);
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 1.5em;
     box-shadow: 2px 2px 8px #000; }
 
@@ -145,14 +145,10 @@ header {
     display: flex;
     justify-content: center; }
     .containerMod__pv--card {
-      width: 25rem;
-      height: auto;
-      margin: 2em;
-      text-align: center;
-      background: none;
-      padding: 0.5em; }
+      width: 20rem;
+      height: auto; }
       .containerMod__pv--card:hover {
-        transform: scale(1.1, 1.1); }
+        transform: scale(1.05, 1.05); }
       .containerMod__pv--card--tarj {
         color: white;
         background-color: rgba(0, 0, 0, 0.815); }
@@ -334,8 +330,8 @@ p {
     .imagenFondo__1 {
       margin-left: -1rem; }
       .imagenFondo__1 .btn {
-        margin-left: 7rem;
-        margin-top: 14em; }
+        margin-left: 8rem;
+        margin-top: 15em; }
       .imagenFondo__1 .tituloHome {
         font-size: 5em;
         line-height: 4rem;
@@ -344,7 +340,7 @@ p {
       margin-bottom: 5rem;
       margin-right: -5rem; }
   .parte2 {
-    background-color: #a5472a;
+    background-image: url(../assets/multimedia/grabaciones-min2.jpg);
     display: flex;
     flex-direction: column-reverse; }
     .parte2__foto1 {
@@ -384,15 +380,15 @@ p {
   .containerMod {
     height: auto; }
     .containerMod__pv {
-      padding-top: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-bottom: 2em; }
+      padding-bottom: 2em;
+      padding-left: 1.2em;
+      padding-right: 1em; }
       .containerMod__pv--card {
-        width: 19rem;
+        width: 20rem;
         height: auto;
-        margin: 2em;
         text-align: center;
         background: none;
         padding: 0.5em; }
