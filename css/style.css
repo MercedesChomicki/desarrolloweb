@@ -17,7 +17,7 @@ header {
   font-family: 'WindSong', cursive; }
 
 /* index */
-.imagenFondo {
+.index__parte1 {
   padding-top: 5em;
   background-image: url(../assets/multimedia/fotomic.jpg);
   background-repeat: no-repeat;
@@ -25,12 +25,12 @@ header {
   background-size: cover;
   width: 100%;
   height: 50em; }
-  .imagenFondo__1 {
+  .index__parte1--sector1 {
     margin-left: 12rem;
     line-height: 10rem; }
-    .imagenFondo__1 .btn {
+    .index__parte1--sector1 .btn {
       margin-left: 12rem; }
-  .imagenFondo__2--btnWpp {
+  .index__parte1--sector2--btnWpp {
     position: fixed;
     width: 3rem;
     height: 3rem;
@@ -44,11 +44,11 @@ header {
     z-index: 100;
     text-shadow: 2px 2px 8px #000;
     box-shadow: 2px 2px 8px #000; }
-  .imagenFondo__2:hover {
+  .index__parte1--sector2:hover {
     transform: scale(1.1, 1.1);
     transition: 1s; }
 
-.parte2 {
+.index__parte2 {
   background-image: url(../assets/multimedia/grabaciones-min.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -59,11 +59,11 @@ header {
   justify-content: center;
   height: 80vh;
   align-items: center; }
-  .parte2__foto1 {
+  .index__parte2--foto {
     width: 38.5%;
     border-radius: 10px;
     box-shadow: #000 10px 5px 15px; }
-  .parte2__texto {
+  .index__parte2--texto {
     width: 22rem;
     height: auto;
     padding: 2rem;
@@ -143,8 +143,11 @@ header {
   .containerMod__pv {
     padding-top: 1rem;
     display: flex;
-    justify-content: center; }
+    justify-content: space-evenly;
+    margin-left: 15em;
+    margin-right: 15em; }
     .containerMod__pv--card {
+      padding: 0.5em;
       width: 20rem;
       height: auto; }
       .containerMod__pv--card:hover {
@@ -296,20 +299,6 @@ p {
   color: black;
   word-spacing: 20px; }
 
-.botonIndex {
-  width: 10rem;
-  height: 3rem;
-  font-size: 1.5em;
-  color: white;
-  background-color: #af2900; }
-
-.page-section__form__bordes__formulario__boton {
-  width: 10rem;
-  height: 3rem;
-  font-size: 1.5em;
-  color: #000;
-  background-color: aqua; }
-
 .footer {
   width: 100%;
   padding-top: 2em;
@@ -324,41 +313,33 @@ p {
 
 /* media queries */
 @media screen and (max-width: 480px) {
-  .imagenFondo {
+  .index__parte1 {
     background-image: url(../assets/multimedia/fotomic2-min.jpg);
     padding-top: 1.5em; }
-    .imagenFondo__1 {
+    .index__parte1--sector1 {
       margin-left: -1rem; }
-      .imagenFondo__1 .btn {
+      .index__parte1--sector1 .btn {
         margin-left: 8rem;
-        margin-top: 15em; }
-      .imagenFondo__1 .tituloHome {
+        margin-top: 14em; }
+      .index__parte1--sector1 .tituloHome {
         font-size: 5em;
         line-height: 4rem;
         width: 100%; }
-    .imagenFondo__2--btnWpp {
+    .index__parte1--sector2--btnWpp {
       margin-bottom: 5rem;
       margin-right: -5rem; }
-  .parte2 {
+  .index__parte2 {
     background-image: url(../assets/multimedia/grabaciones-min2.jpg);
     display: flex;
     flex-direction: column-reverse; }
-    .parte2__foto1 {
+    .index__parte2--foto {
       width: 100%;
       border-radius: 10px;
       box-shadow: #000 10px 5px 15px; }
-    .parte2__texto {
+    .index__parte2--texto {
       width: 80%;
-      height: auto;
       padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      background-color: rgba(172, 172, 172, 0.527);
-      color: white;
-      font-family: 'Poppins', sans-serif;
-      font-size: 100%;
-      box-shadow: 2px 2px 8px #000; }
+      font-size: 100%; }
   .servicios__encabezado--texto .tituloServicios {
     margin-top: -6rem;
     font-size: 5em; }
@@ -367,6 +348,7 @@ p {
   .servicios__cards {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 3em; }
@@ -382,16 +364,16 @@ p {
     .containerMod__pv {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding-bottom: 2em;
-      padding-left: 1.2em;
-      padding-right: 1em; }
+      justify-items: center;
+      align-items: center;
+      padding-bottom: 4em;
+      margin-left: 2em;
+      margin-right: 2em; }
       .containerMod__pv--card {
         width: 20rem;
         height: auto;
         text-align: center;
-        background: none;
-        padding: 0.5em; }
+        background: none; }
         .containerMod__pv--card:hover {
           transform: scale(1.1, 1.1); }
         .containerMod__pv--card--tarj {

@@ -5,9 +5,7 @@
 $primary-background: gainsboro;
 $secondary-font: #434343;
 $third-font: #000;
-$forty-font: #edcb54;
 $font-size: 30px;
-$page: home;
 
 * {
     margin: 0;
@@ -29,81 +27,74 @@ header {
 }
 
 /* index */
+.index {
+    &__parte1 {
+        padding-top: 5em;
+        background-image: url(../assets/multimedia/fotomic.jpg);
+        @include boxes;
 
-.imagenFondo {
-    padding-top: 5em;
-    background-image: url(../assets/multimedia/fotomic.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 50em;
-
-    &__1 {
-        margin-left: 12rem;
-        line-height: 10rem;
-
-        .btn {
+        &--sector1 {
             margin-left: 12rem;
+            line-height: 10rem;
+
+            .btn {
+                margin-left: 12rem;
+            }
+        }
+
+        &--sector2 {
+            &--btnWpp {
+                position: fixed;
+                width: 3rem;
+                height: 3rem;
+                bottom: 3rem;
+                right: 8rem;
+                background-color: #0df053;
+                color: #fff;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 2rem;
+                z-index: 100;
+                text-shadow: 2px 2px 8px $third-font;
+                box-shadow: 2px 2px 8px $third-font;
+            }
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                transition: 1s;
+            }
         }
     }
 
-    &__2 {
-        &--btnWpp {
-            position: fixed;
-            width: 3rem;
-            height: 3rem;
-            bottom: 3rem;
-            right: 8rem;
-            background-color: #0df053;
-            color: #fff;
-            border-radius: 50px;
+    &__parte2 {
+        background-image: url(../assets/multimedia/grabaciones-min.jpg);
+        @include boxes;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--foto {
+            width: 38.5%;
+            border-radius: 10px;
+            box-shadow: #000 10px 5px 15px;
+        }
+
+        &--texto {
+            width: 22rem;
+            height: auto;
+            padding: 2rem;
+            margin-top: 1rem;
+            border-radius: 10px;
             text-align: center;
-            font-size: 2rem;
-            z-index: 100;
-            text-shadow: 2px 2px 8px $third-font;
+            background-color: rgba(172, 172, 172, 0.527);
+            color: white;
+            font-family: 'poppins', sans-serif;
+            font-size: 1.5em;
             box-shadow: 2px 2px 8px $third-font;
         }
-
-        &:hover {
-            transform: scale(1.1, 1.1);
-            transition: 1s;
-        }
     }
 }
 
-.parte2 {
-    background-image: url(../assets/multimedia/grabaciones-min.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 50em;
-    display: flex;
-    justify-content: center;
-    height: 80vh;
-    align-items: center;
-
-    &__foto1 {
-        width: 38.5%;
-        border-radius: 10px;
-        box-shadow: #000 10px 5px 15px;
-    }
-
-    &__texto {
-        width: 22rem;
-        height: auto;
-        padding: 2rem;
-        margin-top: 1rem;
-        border-radius: 10px;
-        text-align: center;
-        background-color: rgba(172, 172, 172, 0.527);
-        color: white;
-        font-family: 'poppins', sans-serif;
-        font-size: 1.5em;
-        box-shadow: 2px 2px 8px $third-font;
-    }
-}
 
 // servicios
 
@@ -113,12 +104,7 @@ header {
 
     &__encabezado {
         background-image: url(../assets/multimedia/servicios-min.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        width: 100%;
-        height: 90vh;
+        @include boxes;
         display: flex;
         justify-content: space-evenly;
         align-content: center;
@@ -142,10 +128,7 @@ header {
         display: flex;
         justify-content: space-evenly;
         background-image: url(../assets/multimedia/foto9-min.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        width: 100%;
+        @include boxes;
         padding-left: 2em;
         padding-right: 4em;
         padding-bottom: 3em;
@@ -186,19 +169,17 @@ header {
     text-align: center;
     padding-top: 4rem;
     background-image: url(../assets/multimedia/foto4-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-    height: 200vh;
+    @include boxes;
 
     &__pv {
         padding-top: 1rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        margin-left: 15em;
+        margin-right: 15em;
 
         &--card {
+            padding: 0.5em;
             width: 20rem;
             height: auto;
 
@@ -265,12 +246,7 @@ header {
 .pagContacto {
     padding-top: 2rem;
     background-image: url(../assets/multimedia/show.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 150vh;
+    @include boxes;
 
     &__bloque1 {
         text-align: center;
@@ -389,12 +365,6 @@ tituloServicios {
     }
 }
 
-//interacion (en Unpocodemi)
-p {
-    padding-top: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-}
 
 @for $i from 1 through 4 {
     .parrafo#{$i} {
@@ -406,21 +376,22 @@ p {
 
 // mixin
 
-@mixin boxes ($width, $height, $font-size, $color, $background-color) {
+@mixin boxes($repeat:no-repeat, $attachment:fixed, $size:cover, $width:100%, $height:50em, $position:center center) {
+    background-repeat: $repeat;
+    background-attachment: $attachment;
+    background-size: $size;
+    background-position: $position;
     width: $width;
     height: $height;
-    font-size: $font-size;
-    color: $color;
-    background-color: $background-color;
 }
 
-.botonIndex {
-    @include boxes (10rem, 3rem, 1.5em, white, rgb(175, 41, 0))
-}
+// .botonIndex {
+//     @include boxes (10rem, 3rem, 1.5em, white, rgb(175, 41, 0))
+// }
 
-.page-section__form__bordes__formulario__boton {
-    @include boxes (10rem, 3rem, 1.5em, $third-font, aqua)
-}
+// .page-section__form__bordes__formulario__boton {
+//     @include boxes (10rem, 3rem, 1.5em, $third-font, aqua)
+// }
 
 // footer 
 
@@ -448,56 +419,50 @@ p {
 
     // INDEX
 
-    .imagenFondo {
-        background-image: url(../assets/multimedia/fotomic2-min.jpg);
-        padding-top: 1.5em;
+    .index {
+        &__parte1 {
+            background-image: url(../assets/multimedia/fotomic2-min.jpg);
+            padding-top: 1.5em;
 
-        &__1 {
-            margin-left: -1rem;
+            &--sector1 {
+                margin-left: -1rem;
 
-            .btn {
-                margin-left: 8rem;
-                margin-top: 15em;
+                .btn {
+                    margin-left: 8rem;
+                    margin-top: 14em;
+                }
+
+                .tituloHome {
+                    font-size: 5em;
+                    line-height: 4rem;
+                    width: 100%;
+                }
             }
 
-            .tituloHome {
-                font-size: 5em;
-                line-height: 4rem;
+            &--sector2 {
+                &--btnWpp {
+                    margin-bottom: 5rem;
+                    margin-right: -5rem;
+                }
+            }
+        }
+
+        &__parte2 {
+            background-image: url(../assets/multimedia/grabaciones-min2.jpg);
+            display: flex;
+            flex-direction: column-reverse;
+
+            &--foto {
                 width: 100%;
+                border-radius: 10px;
+                box-shadow: #000 10px 5px 15px;
             }
-        }
 
-        &__2 {
-            &--btnWpp {
-                margin-bottom: 5rem;
-                margin-right: -5rem;
+            &--texto {
+                width: 80%;
+                padding: 1rem;
+                font-size: 100%;
             }
-        }
-    }
-
-    .parte2 {
-        background-image: url(../assets/multimedia/grabaciones-min2.jpg);
-        display: flex;
-        flex-direction: column-reverse;
-
-        &__foto1 {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: #000 10px 5px 15px;
-        }
-
-        &__texto {
-            width: 80%;
-            height: auto;
-            padding: 1rem;
-            margin-top: 1rem;
-            border-radius: 10px;
-            text-align: center;
-            background-color: rgba(172, 172, 172, 0.527);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            font-size: 100%;
-            box-shadow: 2px 2px 8px $third-font;
         }
     }
 
@@ -521,6 +486,7 @@ p {
         &__cards {
             display: flex;
             justify-content: center;
+            align-items: center;
             padding-left: 2em;
             padding-right: 2em;
             padding-bottom: 3em;
@@ -547,17 +513,17 @@ p {
         &__pv {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            padding-bottom: 2em;
-            padding-left: 1.2em;
-            padding-right: 1em;
+            justify-items: center;
+            align-items: center;
+            padding-bottom: 4em;
+            margin-left: 2em;
+            margin-right: 2em;
 
             &--card {
                 width: 20rem;
                 height: auto;
                 text-align: center;
                 background: none;
-                padding: 0.5em;
 
                 &:hover {
                     transform: scale(1.1, 1.1);
